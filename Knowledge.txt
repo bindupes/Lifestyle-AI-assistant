@@ -1,0 +1,118 @@
+## Lifestyle Prediction - Knowledge Base for Chatbot
+
+### 📌 Project Summary:
+This project predicts a person's **healthy lifestyle percentage** based on their daily habits using a machine learning model. Inputs include:
+- Age
+- Daily Calorie Intake
+- Sleep Hours
+- Monthly Income
+- Daily Working Hours
+
+The model used is a **RandomForestRegressor**, trained on a CSV dataset. The final model is deployed through a **Flask web app** and accepts user inputs via an HTML form.
+
+---
+
+### 🤖 How Predictions Work:
+- The user enters age, calorie intake, sleep hours, income, and working hours.
+- The model predicts a **"Healthy Life Percentage"** (from 0% to 100%).
+- The higher the percentage, the healthier the lifestyle.
+- Based on the result, the bot provides suggestions, warnings, or encouragement.
+
+---
+
+### 🔥 Frequently Asked Topics Covered by the Bot:
+
+#### 💬 Lifestyle Prediction Questions:
+- What does my healthy life percentage mean?
+- Is 60% lifestyle good?
+- What if my lifestyle score is below 50%?
+- How can I improve my lifestyle score?
+- What factors are affecting my lifestyle the most?
+- Is income linked to a better lifestyle?
+
+#### 🍱 Nutrition and Calories:
+- How many calories should I eat per day?
+  → Average:
+    - Women: 1600–2400 calories/day  
+    - Men: 2000–3000 calories/day  
+    - Depends on age, activity level, and goals.
+- What food should I eat for a healthier lifestyle?
+  → Recommended:  
+    - Fruits, vegetables, whole grains, lean proteins (chicken, tofu, fish), healthy fats (nuts, olive oil)
+- What food should I avoid?
+  → Avoid:  
+    - Sugary snacks, processed food, fast food, excessive caffeine, fried food
+
+#### 😴 Sleep:
+- How much sleep is required for a healthy lifestyle?
+  → Based on age:
+    - Teens (13–18): 8–10 hours  
+    - Adults (18–64): 7–9 hours  
+    - Seniors (65+): 7–8 hours
+- What happens if I sleep less than 5 hours?
+  → Can lead to poor mental focus, low immunity, weight gain, and higher risk of disease.
+
+#### 💼 Working Hours:
+- How many hours of work per day is healthy?
+  → Ideal: 6–8 hours.  
+    Overworking (>10 hours/day) increases stress, reduces sleep, and negatively affects lifestyle.
+- Is overworking affecting my lifestyle score?
+  → Yes. Less free time, more stress, and poor sleep lower the lifestyle score.
+
+#### 🧠 Mental and Emotional Wellbeing:
+- How does stress affect lifestyle?
+  → Long-term stress increases cortisol, affects sleep, eating habits, and lowers immunity.
+- What can I do to manage stress?
+  → Practice mindfulness, exercise regularly, take breaks, avoid overworking, talk to someone.
+
+#### 🏃‍♂️ Exercise and Activity:
+- How important is physical activity?
+  → Crucial. It boosts metabolism, reduces stress, and improves overall lifestyle score.
+- How much should I exercise?
+  → At least 30 minutes of moderate activity (like brisk walking) 5 times a week.
+
+---
+
+### ✅ Tips to Improve Lifestyle Score:
+1. **Improve Sleep**: Sleep 7–9 hours daily.
+2. **Eat Healthy**: Balance carbs, protein, and fats. Avoid junk food.
+3. **Stay Active**: Exercise regularly.
+4. **Work-Life Balance**: Keep working hours under 9.
+5. **Reduce Stress**: Meditate, take breaks, avoid overthinking.
+6. **Increase Income Wisely**: Stable income can help afford better food, healthcare, and reduce stress.
+7. **Avoid Smoking/Alcohol**: These reduce your healthy life percentage significantly.
+
+---
+
+### ❓ Sample Questions Users May Ask the Bot:
+- What if I’m 40 and work 10 hours a day?
+- Can I still be healthy if I sleep only 5 hours?
+- Does income really affect lifestyle?
+- What’s the best routine for a healthy lifestyle?
+- Give me a diet plan to improve my health.
+- How to lose weight in a healthy way?
+- What causes low healthy life percentage?
+- How does my age affect my score?
+
+---
+
+### 🔐 Machine Learning Model Details:
+- Used: RandomForestRegressor
+- Input features: age, calories, sleep, income, working hours
+- Output: healthy_life_percent
+- Trained on: lifestyle_data.csv
+- Evaluation: MSE (Mean Squared Error) on test set
+- Deployment: Flask Web App + Joblib (lifestyle_model.pkl)
+
+---
+
+### 🌐 Tech Stack:
+- **Frontend**: HTML/CSS
+- **Backend**: Python Flask
+- **ML Model**: Random Forest Regressor
+- **Deployment**: Localhost or Web Hosting
+- **Bot Integration (optional)**: ChatGPT API or ChatPDF for smart Q&A
+
+---
+
+This knowledge base helps the chatbot give **real-time answers** and **personalized suggestions** based on user inputs and general health principles.
