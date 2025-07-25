@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Good Lifestyle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url('https://www.cellercalmarino.com/wp-content/uploads/2020/05/thumbnail.jpg'); /* Set a background color for better visibility */
+    }
+    .container {
+      position: relative;
+      width: 80%; /* Adjust container width */
+      max-width: 1200px; /* Limit maximum container width */
+      margin: 0 auto; /* Center container horizontally */
+      padding: 20px;
+      box-sizing: border-box;
+      display: grid;
+      margin-top:100px;
+      grid-template-columns: repeat(2, calc(50% - 10px)); /* 2 columns with a gap */
+      grid-template-rows: repeat(3, 150px); /* 3 rows */
+      grid-gap: 20px; /* Gap between articles */
+      justify-content: flex-start; /* Align towards left */
+      align-items: center;
+      opacity:0.7;
+    }
+    
+    .article {
+      position: relative;
+      color: black;
+      background-color: white;
+      padding: 15px; /* Adjusted padding to accommodate text */
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for 3D effect */
+      box-shadow: 0 4px 8px rgba(63, 92, 210, 0.3);
+      box-sizing: border-box; /* Include padding in width calculation */
+    }
+    .article:hover {
+      transform: translateY(-5px); /* Apply translation on hover */
+      box-shadow: 0 8px 16px rgba(61, 83, 181, 0.4); /* Adjust box shadow on hover */
+    }
+    
+    .article h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .article p {
+      margin: 0; /* Reset margin */
+    }
+    .article.nutrition,
+    .article.physical-health,
+    .article.mental-health,
+    .article.time-management,
+    .article.expenditure,
+    .article.career-enhancement,
+    .article.career-growth {
+      width: 100%; /* Set width of articles */
+      height: 150px; /* Set height of articles */
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="article nutrition">
+      <h2>Good Nutrition</h2>
+      <p>Eat a balanced diet rich in fruits, vegetables, whole grains, and lean proteins to fuel your body with essential nutrients.</p><br>
+      <a href="static/GoodNutrition.pdf">More on Good Nutrition</a>
+    </div>
+    <div class="article physical-health">
+      <h2>Physical Health</h2>
+      <p>Stay active with regular exercise, such as walking, jogging, swimming, or yoga, to maintain your physical fitness and overall well-being.</p><br>
+      <a href="static/Physical_Health.pdf">More on Physical Health</a>
+    </div>
+    <div class="article mental-health">
+      <h2>Mental Health</h2>
+      <p>Practice mindfulness, meditation, and relaxation techniques to reduce stress, improve mental clarity, and enhance emotional resilience.</p><br>
+      <a href="static/mental_health.pdf">More on Mental Health</a>
+    </div>
+    <div class="article time-management">
+      <h2>Time Management</h2>
+      <p>Set priorities, establish goals, and manage your time effectively to maximize productivity, achieve work-life balance, and reduce stress.</p><br>
+      <a href="static/time-management.pdf">More on Time Management</a>
+    </div>
+    <div class="article career-enhancement">
+      <h2>Career Enhancement</h2>
+      <p>Invest in continuous learning and skill development to stay updated with industry trends and enhance your expertise for a good career growth</p><br>
+      <a href="static/Career_enhancing.pdf">More on Career Enhancement</a>
+    </div>
+    <div class="article effective-relaxation">
+      <h2>Effective Relaxation</h2>
+      <p>Career growth is often a journey filled with ups and downs. Stay resilient in the face of challenges, and persevere even when faced with setbacks. </p><br>
+      <a href="static/Relaxation-Skills.pdf">More on Effective Relaxation</a>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.querySelectorAll('.article').forEach(article => {
+        article.classList.add('blinking');
+      });
+    }, 2000);
+  </script>
+</body>
+</html>
