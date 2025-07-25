@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lifestyle Analyzer</h1>
+        <form id="inputForm">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="calories">Calories Taken (kcal):</label>
+            <input type="number" id="calories" name="calories" required>
+
+            <label for="sleep">Relaxation time (hours):</label>
+            <input type="number" id="sleep" name="sleep" required>
+
+            <label for="income">Income (INR):</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="working_hours">Working Hours:</label>
+            <input type="number" id="working_hours" name="working_hours" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+        <center><div id="result"></div><br></center>
+        <a href="/article.html">Click here to know how to improve Your Lifestyle</a>
+    </div>
+
+    <!-- JS form handler -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <!-- ✅ Chatbase Chatbot Embed -->
+    <script>
+    (function(){
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+            window.chatbase = (...arguments) => {
+                if (!window.chatbase.q) {
+                    window.chatbase.q = []
+                }
+                window.chatbase.q.push(arguments)
+            };
+            window.chatbase = new Proxy(window.chatbase, {
+                get(target, prop) {
+                    if (prop === "q") {
+                        return target.q
+                    }
+                    return (...args) => target(prop, ...args)
+                }
+            });
+        }
+        const onLoad = function() {
+            const script = document.createElement("script");
+            script.src = "https://www.chatbase.co/embed.min.js";
+            script.id = "2Pe2JMQcSO56DFvmcfvfd"; // ✅ YOUR AGENT ID
+            script.domain = "www.chatbase.co";
+            document.body.appendChild(script)
+        };
+        if (document.readyState === "complete") {
+            onLoad()
+        } else {
+            window.addEventListener("load", onLoad)
+        }
+    })();
+    </script>
+
+</body>
+</html>
